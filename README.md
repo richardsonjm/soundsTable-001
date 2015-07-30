@@ -1,7 +1,4 @@
----
-tags: uitableviewcontroller, staticcells, customcells
-languages: objc
----
+
 # Sounds Table
 
 ## Instructions
