@@ -13,7 +13,9 @@ Your goal is to reproduce this settings page in a `UITableViewController` using 
 
  ![Setting ScreenShot](http://ironboard-curriculum-content.s3.amazonaws.com/iOS/soundsTable-Screenshot.png)
 
- 4. Now write a new implementation of that screen using dynamic prototypes. Isn't that annoying?
+## Advanced
+
+ 1. Now write a new implementation of that screen using dynamic prototypes. Isn't that annoying?
 
 ## Resources
 
