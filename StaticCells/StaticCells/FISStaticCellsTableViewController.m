@@ -73,6 +73,14 @@
         } else {
             cell.textLabel.text = @"Vibrate on Silent";
         }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            UISlider *aSlider = [[UISlider alloc] init];
+            [cell addSubview:aSlider];
+            aSlider.bounds = CGRectMake(0, 0, cell.contentView.bounds.size.width - 50, aSlider.bounds.size.height);
+            aSlider.center = CGPointMake(CGRectGetMidX(cell.contentView.bounds), CGRectGetMidY(cell.contentView.bounds));
+            aSlider.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+        }
     }
     
     return cell;
