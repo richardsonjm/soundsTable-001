@@ -85,6 +85,23 @@
             [aSwitch setOn:YES];
             cell.accessoryView = aSwitch;
             cell.textLabel.text = @"Change with Buttons";
+        } else {
+            cell.backgroundColor = [UIColor lightGrayColor];
+            cell.textLabel.numberOfLines = 0;
+            cell.textLabel.text = @"The volume of the ringer and alerts can be\n adjusted using the volume buttons.";
+
+        }
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        if (indexPath.row == 0) {
+            cell.textLabel.text = @"Ringtone";
+            cell.detailTextLabel.text = @"Trill";
+        } else if (indexPath.row == 1) {
+            cell.textLabel.text = @"Text Tone";
+            cell.detailTextLabel.text = @"Glass";
+        } else {
+            cell.textLabel.text = @"New Voicemail";
+            cell.detailTextLabel.text = @"Tri-tone";
         }
     }
     
