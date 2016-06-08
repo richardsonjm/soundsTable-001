@@ -133,6 +133,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accessoryView" destination="9Cx-Vn-apq" id="NhH-Al-T5A"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eav-Gh-ERU" style="IBUITableViewCellStyleDefault" id="gZt-of-pMC">
                                         <rect key="frame" x="0.0" y="395" width="600" height="44"/>
@@ -150,6 +153,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accessoryView" destination="Wkc-CB-Ej5" id="bQQ-ou-XIX"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lSb-7S-HpO">
                                         <rect key="frame" x="0.0" y="439" width="600" height="44"/>
@@ -166,6 +172,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accessoryView" destination="LwA-jN-neL" id="ecS-US-pGb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -189,6 +198,21 @@
                     <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Cx-Vn-apq">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Trill"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wkc-CB-Ej5">
+                    <rect key="frame" x="0.0" y="0.0" width="38" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Glass"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LwA-jN-neL">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Tri-tone"/>
+                </button>
             </objects>
             <point key="canvasLocation" x="1371" y="569"/>
         </scene>
