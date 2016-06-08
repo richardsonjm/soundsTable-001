@@ -80,6 +80,11 @@
             aSlider.bounds = CGRectMake(0, 0, cell.contentView.bounds.size.width - 50, aSlider.bounds.size.height);
             aSlider.center = CGPointMake(CGRectGetMidX(cell.contentView.bounds), CGRectGetMidY(cell.contentView.bounds));
             aSlider.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+        } else if (indexPath.row == 1) {
+            UISwitch *aSwitch = [[UISwitch alloc] init];
+            [aSwitch setOn:YES];
+            cell.accessoryView = aSwitch;
+            cell.textLabel.text = @"Change with Buttons";
         }
     }
     
