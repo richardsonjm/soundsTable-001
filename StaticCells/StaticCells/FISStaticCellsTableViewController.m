@@ -31,25 +31,53 @@
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Incomplete implementation, return the number of sections
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-//    return 0;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 3;
+}
 
-/*
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return @"VIBRATE";
+    } else if (section == 1) {
+        return @"RINGER AND ALERTS";
+    } else {
+        return @"SOUNDS AND VIBRATION PATTERNS";
+    }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 2;
+    } else if (section == 1) {
+        return 3;
+    } else {
+        return 3;
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    NSString *SimpleIdentifier = @"SimpleIdentifier";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleIdentifier];
     
-    // Configure the cell...
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:SimpleIdentifier];
+    }
+    
+    if (indexPath.section == 0) {
+        UISwitch *aSwitch = [[UISwitch alloc] init];
+        [aSwitch setOn:YES];
+        cell.accessoryView = aSwitch;
+        if (indexPath.row == 0) {
+            cell.textLabel.text = @"Vibrate on Ring";
+        } else {
+            cell.textLabel.text = @"Vibrate on Silent";
+        }
+    }
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
